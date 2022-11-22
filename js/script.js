@@ -1,26 +1,21 @@
 "Use script";
+ 
+const number0fFilms = +prompt('Сколько фильмов ви уже посмотрели?', '');
 
- // alert('Hello');
+const personalMovieDB = {
+    count: number0fFilms,
+    movie: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const result =  confirm('Are you here');
-// console.log(result);
+const a = prompt('Odin iz poslednih prosmotrenuh filmov?', ''),
+      b = prompt('Na skolko ego ocenite', ''),
+      c = prompt('Odin iz poslednih prosmotrenuh filmov?', ''),
+      d = prompt('Na skolko ego ocenite', '');
 
-// const answer = +prompt("Вам есть 18?", "18");
-// console.log(answer + 5);
-// const answer = [];
+personalMovieDB.movie[a] = b;
+personalMovieDB.movie[c] = d;
 
-// answer [0] = prompt('як ваше імья', '');
-//answer [1] = prompt('як ваше Фамілія', '');
-//answer [2] = prompt('як вас по Батькові', '');
-
-console.log('arr' + " - objekct");
-console.log(4 + "5");
-
-let incr = 10, 
-    decr = 10;
-
-incr++;
-decr--;
-
-console.log(incr);
-console.log(decr);
+console.log(personalMovieDB);
